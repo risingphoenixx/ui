@@ -1,0 +1,33 @@
+div {
+	
+	position: absolute;
+	right: -10%;
+	left: 50%;
+	top: -10%;
+	bottom: -10%;
+	z-index: 1;
+
+	&::before,
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		content: '';
+	}
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 4em);
+	padding: 2em;
+	background: #20032C;
+}
+
+body {
+	position: relative;
+	max-height: calc(100vh - 4em);
+}
